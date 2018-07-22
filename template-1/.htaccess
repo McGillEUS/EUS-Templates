@@ -1,0 +1,9 @@
+Options +MultiViews +FollowSymLinks DirectoryIndex index.html
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9} /index.html HTTP/
+RewriteRule ^index.html$ http://mec.mcgilleus.ca/ [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

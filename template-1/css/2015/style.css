@@ -1,0 +1,159 @@
+.cos-wrapper {
+        position: fixed;
+        z-index: 9999999;
+        top: 110px;
+        left: -90px;
+    }
+    .cos-trigger {
+        position: relative;
+        background: #444;
+        float: right;
+        padding: 10px 15px;
+        color: #FFF;
+        font-size: 20px;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border-radius: 0 25px 25px 0;
+    }
+    .cos-trigger i {
+        position: absolute;
+        left: 2px;
+        bottom: 8px;
+        -moz-transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+    }
+    .cos-body {
+        position: relative;
+        background: #444;
+        float: left;
+        padding: 15px 15px;
+        width: 90px;
+    }
+    .cos-body span {
+        font-size: 12px;
+        font-weight: bold;
+        color: #E5E5E5;
+        margin-bottom: 10px;
+        display: block;
+        letter-spacing: 1px;
+    }
+    .ch-color {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .ch-color li {
+        display: block;
+        float: left;
+    }
+    .ch-color li.aktif a {
+        box-shadow: 0 0 0 3px #222;
+    }
+    .ch-color li a {
+        width: 20px;
+        height: 20px;
+        margin: 2px 5px;
+        content:' ';
+        position: relative;
+        display: inline-block;
+    }
+    a[data-css='light-blue'] {
+        background: #4cddf3;
+    }
+    a[data-css='light-green'] {
+        background: #2cde97;
+    }
+    a[data-css='light-red'] {
+        background: #ea4848;
+    }
+    a[data-css='yellow'] {
+        background: #e9bd00;
+    }
+
+@font-face {
+  font-family: 'costumize', arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'costumize';
+    src: url('../font/costumize.svg?49350185#costumize') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "costumize";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-menu:before { content: '\e815'; } /* 'î •' */
+.icon-wallet:before { content: '\e802'; } /* 'î ‚' */
+.icon-right-open-big:before { content: '\e813'; } /* 'î “' */
+.icon-home-outline:before { content: '\e822'; } /* 'î ¢' */
+.icon-tag-1:before { content: '\e80f'; } /* 'î ' */
+.icon-tags:before { content: '\e810'; } /* 'î ' */
+.icon-forward-outline:before { content: '\e812'; } /* 'î ’' */
+.icon-chat-alt:before { content: '\e811'; } /* 'î ‘' */
+.icon-basket:before { content: '\e823'; } /* 'î £' */
+.icon-dribbble:before { content: '\e819'; } /* 'î ™' */
+.icon-linkedin:before { content: '\e81c'; } /* 'î œ' */
+.icon-skype:before { content: '\e817'; } /* 'î —' */
+.icon-twitter:before { content: '\e816'; } /* 'î –' */
+.icon-vimeo:before { content: '\e81a'; } /* 'î š' */
+.icon-ebay:before { content: '\e818'; } /* 'î ˜' */
+.icon-facebook:before { content: '\e81b'; } /* 'î ›' */
+.icon-search:before { content: '\e80b'; } /* 'î ‹' */
+.icon-heart:before { content: '\e80a'; } /* 'î Š' */
+.icon-left-open-big:before { content: '\e814'; } /* 'î ”' */
+.icon-user:before { content: '\e81f'; } /* 'î Ÿ' */
+.icon-attach:before { content: '\e80e'; } /* 'î Ž' */
+.icon-lock:before { content: '\e809'; } /* 'î ‰' */
+.icon-eye:before { content: '\e808'; } /* 'î ˆ' */
+.icon-tag:before { content: '\e807'; } /* 'î ‡' */
+.icon-thumbs-up:before { content: '\e804'; } /* 'î „' */
+.icon-comment:before { content: '\e803'; } /* 'î ƒ' */
+.icon-location:before { content: '\e806'; } /* 'î †' */
+.icon-trash:before { content: '\e820'; } /* 'î  ' */
+.icon-doc:before { content: '\e805'; } /* 'î …' */
+.icon-note:before { content: '\e821'; } /* 'î ¡' */
+.icon-cog:before { content: '\e80c'; } /* 'î Œ' */
+.icon-cloud:before { content: '\e80d'; } /* 'î ' */
+.icon-truck:before { content: '\e81e'; } /* 'î ž' */
+.icon-money:before { content: '\e801'; } /* 'î ' */
+.icon-t-shirt:before { content: '\e800'; } /* 'î €' */
+.icon-star:before { content: '\e81d'; } /* 'î ' */
