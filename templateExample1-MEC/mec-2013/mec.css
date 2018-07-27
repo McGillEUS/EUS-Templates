@@ -1,0 +1,195 @@
+/* 
+
+M E C
+by Luis Pombo, Creative Director of MEC 2013
+<luis@pombo.ca>
+Copyright (C) 2013
+
+*/
+
+@charset "utf-8";
+
+@font-face{
+    font-family: "Gotham Narrow XLight";
+    src: url(Fonts/GothamNarrow-XLight.otf);
+}
+
+@font-face{
+    font-family: "Gotham Narrow Book";
+    src: url(Fonts/GothamNarrow-Book.otf);
+}
+
+
+html, body{
+    height:100%;
+}
+
+html{
+    display:table;
+    width:100%;
+}
+
+body{
+	background-color:#FCFCFC;
+	font-family: "Gotham Narrow XLight";
+	color:#222222;
+	display:table-cell;
+	text-align:center;
+	vertical-align:15px;
+}
+
+#cushion{
+    height:20px
+}
+
+h1{
+	font-family: "Gotham Narrow Book";
+	font-size:45px;
+	font-weight:normal;
+	line-height:60px;
+	text-align:right;
+}
+
+h2{
+	font-size:25px;
+	font-weight:normal;
+	line-height:10px;
+	text-align:right;
+}
+
+h3{
+	font-size:26px;
+	font-weight:normal;
+	line-height:10px;
+	text-align:left;
+}
+
+h4{
+    16px;
+    color:#D32020;
+    font-weight:normal;
+    text-align:left;
+}
+
+a{
+	text-decoration:none;
+	color:#222222;
+}
+
+a:hover{
+	font-weight: bold;
+}
+
+#menu ul{
+	margin:0;
+	padding:5px;
+	list-style-type: none;
+}
+
+#menu li{
+  display: inline;
+}
+
+#menu ul li a{
+	font-size:25px;
+	padding-right: 20px;
+	padding-left: 10px;
+	text-align:left;
+}
+
+#menu ul li a:hover{
+	background-color: white;
+	font-weight: normal;
+	color: #D32020;
+}
+
+
+
+p{
+	16px;
+}
+
+::selection{
+	background:#D32020;
+	color:#FCFCFC;
+}
+
+#logo{
+	width:150px;
+	height:150px
+}
+
+#head{
+	width:150px;
+	height:150px;
+	display: inline-block;
+}
+
+#title{
+	width:750px;
+	height:150px;
+	display: inline-block;
+}
+
+#main{
+	width:625px;
+	padding-top:-5px;
+	padding-bottom:10px;
+	padding-right:10px;
+	padding-left:15px;
+	display: inline-block;
+}
+
+#main p{
+    text-align:justify;
+    text-justify:inter-word;
+}
+
+#main h3{
+    font-weight:bolder;
+}
+
+#main a{
+    font-weight:bold;
+}
+#main a:hover{
+    color:#D32020;
+}
+
+.side{
+    height: 800px
+	padding-top:-5px;
+	padding-bottom:10px;
+	padding-right:10px;
+	padding-left:10px;
+	display: inline-block;
+	vertical-align:top;
+}
+
+#sponsors img{
+    display:block;
+}
+
+.expic{
+	width:150px;
+	display: inline-block;
+	padding-right:10px;
+}
+
+.exdes{
+    width:450px;
+    display:inline-block;
+    vertical-align:top;
+  	padding-left:10px;
+}
+
+#foot p{
+    text-align:center;
+    font-size:13px;
+}
+#foot a{
+    font-weight:bold;
+}
+#foot a:hover{
+    color:#D32020;
+}

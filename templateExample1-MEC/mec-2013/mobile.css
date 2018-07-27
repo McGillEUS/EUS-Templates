@@ -1,0 +1,186 @@
+/* 
+
+M E C Mobile
+by Luis Pombo, Creative Director of MEC 2013
+<luis@pombo.ca>
+Copyright (C) 2013
+
+*/
+
+@charset "utf-8";
+
+@font-face{
+    font-family: "Gotham Narrow XLight";
+    src: url(Fonts/GothamNarrow-XLight.otf);
+}
+
+@font-face{
+    font-family: "Gotham Narrow Book";
+    src: url(Fonts/GothamNarrow-Book.otf);
+}
+
+
+html, body{
+    height:100%;
+}
+
+html{
+    display:table;
+    width:100%;
+}
+
+body{
+	background-color:#FCFCFC;
+	font-family: "Gotham Narrow XLight";
+	color:#222222;
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+}
+
+h1{
+	font-family: "Gotham Narrow Book";
+	font-size:60px;
+	font-weight:normal;
+	line-height:60px;
+	text-align:center;
+}
+
+h2{
+	font-size:30px;
+	font-weight:normal;
+	line-height:10px;
+	text-align:center;
+}
+
+h3{
+	font-size:26px;
+	font-weight:normal;
+	line-height:10px;
+	text-align:left;
+}
+
+h4{
+    16px;
+    color:#D32020;
+    font-weight:normal;
+}
+
+a{
+	text-decoration:none;
+	color:#222222;
+}
+
+a:hover{
+	font-weight: bold;
+}
+
+#menu {
+    width:90%;
+}
+
+#menu ul{
+	margin:0;
+	padding:5px;
+	list-style-type: none;
+}
+
+#menu li{
+  display: inline;
+}
+
+#menu ul li a{
+	font-size:30px;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+#menu ul li a:hover{
+	background-color: white;
+    font-weight: normal;
+	color: #D32020;
+}
+
+
+
+p{
+	16px;
+}
+
+::selection{
+	background:#D32020;
+	color:#FCFCFC;
+}
+
+#logo{
+	width:250px;
+	height:250px
+}
+
+#head{
+	width:300px;
+	height:250px;
+	display: inline-block;
+	text-align:center;
+}
+
+#title{
+	width:550px;
+	height:250px;
+	display: inline-block;
+	text-align:center;
+}
+
+#main{
+	width:95%;
+	padding-top:-5px;
+	padding-bottom:10px;
+	padding-right:10px;
+	padding-left:15px;
+	display: inline-block;
+}
+
+#cushion{
+    height:20px
+}
+
+#main p{
+    text-align:center;
+}
+
+#main h3{
+    font-weight:bolder;
+    text-align:center;
+}
+
+#main a{
+    font-weight:bold;
+}
+#main a:hover{
+    color:#D32020;
+}
+
+.side{
+    height: 800px
+	padding-top:-5px;
+	padding-bottom:10px;
+	padding-right:10px;
+	padding-left:10px;
+	display: inline-block;
+	vertical-align:top;
+}
+
+#foot{
+    width:95%;
+}
+
+#foot p{
+    text-align:center;
+    font-size:13px;
+}
+#foot a{
+    font-weight:bold;
+}
+#foot a:hover{
+    color:#D32020;
+}
