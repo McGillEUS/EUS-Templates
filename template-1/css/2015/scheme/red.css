@@ -1,0 +1,69 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+.navbar .navbar-brand {
+  /*background: #F0E5E5;*/
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #B32E2E;
+}
+.dropdown-menu {
+  background-color: #B32E2E;
+}
+a {
+  color: #B32E2E;
+}
+.main-color {
+  color: #B32E2E;
+}
+.slides-navigation a:hover {
+  background: #B32E2E;
+}
+.slides-pagination a.current {
+  background: #B32E2E;
+}
+.header-center a:hover {
+  color: #B32E2E;
+}
+.totop:hover span > a.hover {
+  color: #B32E2E;
+}
+.left-icon .icon {
+  background: #B32E2E;
+}
+.styled div span {
+  background: #B32E2E;
+}
+footer.footer {
+  background: #ECE6E6;
+}
+footer.icon {
+  background: #B32E2E;
+}
+.post .post-meta .post-icon:hover {
+  background: #B32E2E;
+}
+.post .post-meta span a {
+  color: #B32E2E;
+}
+.post .read-more {
+  border: 1px solid #B32E2E;
+}
+.mejs-controls .mejs-time-rail .mejs-time-current {
+  background-color: #B32E2E;
+}
+.mejs-horizontal-volume-current {
+  background: #B32E2E;
+}
+.skill-bar ul li .bar {
+  background: #B32E2E;
+}
+.pagination .pag-prev a,
+.pagination .pag-next a {
+  background: #B32E2E;
+  border-color: #B32E2E;
+}
+.testimonial-list .testimonial-item a.current ~ .testi-link,
+.testimonial-list .testimonial-item a:hover ~ .testi-link {
+  background: rgba(76, 221, 243, 0.8);
+}
