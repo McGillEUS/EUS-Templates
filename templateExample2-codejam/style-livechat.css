@@ -1,0 +1,44 @@
+/* My Live Chat */
+
+.mylivechat_inline {
+	/*min-width: 21rem !important;*/
+	width: 90% !important;
+	left: 5% !important;
+	z-index: 3 !important;
+}
+
+@media (min-width: 35rem) {
+	.mylivechat_inline { 
+		width: 40% !important; 
+		left: 5% !important; 
+	}
+
+}
+
+@media (min-width: 70rem) {
+	.mylivechat_inline {
+		width: 20% !important; 
+		left: 2.5% !important; 
+	}
+}
+
+.mylivechat_sprite:nth-child(3) {
+	display: none !important;
+}
+
+.mylivechat_inline input, .mylivechat_inline textarea {
+	color: #000 !important;
+}
+
+.mylivechat_container {
+	border-color: rgb(128, 0, 0) !important;
+}
+
+.mylivechat_main {
+	background-color: rgba(0, 0, 0, .7) !important;
+	color: #fff;
+}
+
+.mylivechat_offline_text, .mylivechat_prechat_text, .mylivechat_offline_box {
+	color: #fff !important;
+}

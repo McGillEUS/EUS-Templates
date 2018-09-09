@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>CodeJam 2016 Registration</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	<style type="text/css">
+		html {
+			background: rgb(50, 45, 40) url("http://codejam.mcgilleus.ca/img/background/stars.jpg") no-repeat center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;				
+		}
+
+		#formnav {
+			background-color: rgba(0, 0, 0, .8);
+			padding-left: 1rem;
+			position: fixed;
+			top: 0;
+			z-index: 5;
+		}
+
+		#form {
+			box-shadow: .1rem .1rem .3em 0 #000;
+			background: rgba(0, 0, 0, 0.5);
+			color: #fff;
+			width: 40rem; max-width: 90%;
+			margin: 40px auto;
+		}
+
+		#form-title {
+			text-align: center;
+		}
+
+		#form-title img {
+			display: inline-block;
+			width: 15rem;
+		}
+
+		#form-title span {
+			display: inline-block;
+			font-size: 2.5rem;
+			font-weight: 100;
+			transform: translateY(-1rem);
+			max-width: 23rem;
+		}
+
+		.description {
+			color: #ddd;
+			font-weight: 300;
+			text-align: justify;    		
+		}
+
+		select {
+			color: #000;
+		}
+
+		input[type=radio] {
+			position: static !important;
+			visibility: visible !important;
+			opacity: 0;
+			transform: translate(2.4rem, 1rem);
+			height: 16px;
+			width: 16px;
+		}
+	</style>
+	<link rel="icon" href="https://googledrive.com/host/0B7vTZzu9mzBDSHkzY1RQMlQ4U0E/brain.png"/>
+</head>
+
+<body>
+
+	<nav id="formnav">
+		<div class="nav-wrapper">
+			<a href="new.html" class="breadcrumb">HOME</a>
+			<a href="#!" class="breadcrumb">Participant Sign up</a>
+		</div>
+	</nav>
+
+	<form class="main" id="form">
+		<div id="forminner">
+			<div class="row">
+				<div class="input-field col s12">
+					<div id="form-title"><img src="http://codejam.mcgilleus.ca/img/header/title_flat.png"><span>2016 Registration</span></div>
+					<p class="description">
+					Guess who's back!!! CodeJam is happening from November 18-20th 2016. <br> 
+					This year's theme is: Human-Computer Interaction! <br>
+					Sign up in teams of 2-4 for either the Junior or Senior challenge. <br><br>
+					YES that's right, there will be two categories of challenges this year: Junior and Senior!! <br>
+					If you are beginner or have never participated in a hackathon then the Junior Challenge is perfect for you! <br>
+					If you have been coding since before you could walk then the Senior challenge is for you. <br><br>
+					Tickets are $15 per person and include: <br>
+					+ a sick T-shirt, <br>
+					+ 3 days of food, <br>
+					+ an epic weekend to tell your grandchildren about!
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<input type="text" id="fname" class="validate" name="First" value="" required>
+					<label for="fname">First Name <span class="red-text">(required)</span></label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<input type="text" id="lname" class="validate" name="Last" value="" required >
+					<label for="lname">Last Name <span class="red-text">(required)</span></label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<input type="email" id="email" class="validate"  name="Email" value="" required>
+					<label for="email" data-error="invalid_email">Email <span class="red-text">(required)</span></label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<select id="major-drop" class="validate required browser-default" name="Major1" onchange="showfield(this.value)" required>
+						<option value="" disabled selected>Major <span class="red-text">(required)</span></option>
+						<option value="Electrical">Electrical</option>
+						<option value="Computer">Computer</option>
+						<option value="Software">Software</option>
+						<option value="Comp Sci">Comp Sci</option>
+						<option value="Others">Others</option>
+					</select>
+				</div>
+			</div>
+
+			<div id="input-major" class="row" style="display:none;">
+				<div class="input-field col s12">
+					<input type="text" id="others" class="major-text" name="Major2" value="" novalidate>
+					<label for="others" class="major-text">Major <span class="red-text">(required)</span></label>
+				</div>
+				</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<select id="year" name="Year" class="validate required browser-default" required>
+						<option value="" disabled selected>Year <span class="red-text">(required)</span></option>
+						<option value="U0">U0</option>
+						<option value="U1">U1</option>
+						<option value="U2">U2</option>
+						<option value="U3">U3</option>
+						<option value="U4+">U4+</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<p>Challenge Type <span class="red-text">(required)</span></p>
+		            <p class="description">Junior challenge follows the same format as the regular Senior challenge, except that Junior challenge will be less demanding to suit students with less programming background. Read more in FAQs.</p>
+					<div>
+						<input type="radio" id="challenge-junior" class="validate" name="Challenge" value="Junior" required>
+						<label for="challenge-junior">Junior</label>
+					</div>
+					<div>
+						<input type="radio" id="challenge-senior" class="validate" name="Challenge" value="Senior">
+						<label for="challenge-senior">Senior</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<input type="text" id="team" class="validate" name="Team" value="" required>
+					<label for="team">Team Name (Teams of 2-4) <span class="red-text">(required)</span></label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<select id="shirt" class="validate required browser-default" name="Tshirt" required>
+						<option value="" disabled selected>T-shirt size <span class="red-text">(required)</span></option>
+						<option value="S">S</option>
+						<option value="M">M</option>
+						<option value="L">L</option>
+						<option value="XL">XL</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<p for="Payment">Payment <span class="red-text">(required)</span></p>
+					<p class="description">
+						Pay in cash in the ECSESS Lounge (Trottier 1060). <br> 
+						Tilt Link: <a target="_blank" href="https://www.tilt.com/tilts/codejam-2016">https://www.tilt.com/tilts/codejam-2016</a>
+					</p>			
+					<div>
+						<input type="radio" id="payment-tilt" class="validate" name="Payment" value="Tilt" required>
+						<label for="payment-tilt">Tilt</label>
+					</div>
+					<div>
+						<input type="radio" id="payment-cash" class="validate" name="Payment" value="Cash" required>
+						<label for="payment-cash">Cash</label>
+					</div>					
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<textarea type="textarea" id="comments" class="validate materialize-textarea" name="Comments" value=""></textarea>
+					<label for="comments">Leave comments about your dietary restrictions, allergies, etc.</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="file-field input-field col s12">
+					<p>Resume <span class="red-text">(required)</span></p>
+					<div class="btn">
+						<span>Browse</span>
+						<input id="files" type="file" required>
+					</div>
+					<div class="file-path-wrapper">
+						<input class="file-path validate" type="text" placeholder="Select a file on your computer">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s6">
+					<button class="waves-effect waves-light btn submit-btn" type="submit" onclick="submitForm(); return false;">Submit</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12" id="progress"></div>
+			</div>
+		</div>
+
+		<div id="success" style="display:none">
+			<h4 class="left-align teal-text">Form submitted</h4>
+			<p>You are now registered to CodeJam 2016!</p>
+			<a href="http://codejam.mcgilleus.ca/">Return to CodeJam homepage</a>
+		</div>
+	</form>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+	<script type="text/javascript">
+		$("iframe").append('<meta name="viewport" content="width=device-width, initial-scale=1.0"/>');
+
+		function showfield(major){
+			var text = document.getElementsByClassName("major-text");
+			var row = $("#input-major");
+			if (major == "Others" || major == "Major") {
+				row.slideDown();
+				for (i=0; i<text.length; i++) {
+					text[i].setAttribute("required", "");
+				}
+			} else {
+				row.slideUp();
+			}
+		}
+	</script>
+
+	<script>
+
+		var file,
+		reader = new FileReader();
+
+		reader.onloadend = function(e) {
+			if (e.target.error != null) {
+				showError("File " + file.name + " could not be read.");
+				return;
+			} else {
+				google.script.run
+				.withSuccessHandler(showSuccess)
+				.uploadFileToGoogleDrive(e.target.result, file.name, $("input#fname").val(), $("input#lname").val());
+			}
+		};
+
+		function showSuccess(e) {
+			if (e === "OK") { 
+				$("#forminner").hide();
+				$("#success").show();
+			} else {
+				showError(e);
+			}
+		}
+
+		function submitForm() {
+
+			var form = $("#form");
+			if (!form[0].checkValidity()) {
+				form.find(':submit').click()
+			}
+
+			var files = $("#files")[0].files;
+
+			if (files.length === 0) {
+				showError("Please select a file to upload");
+				return;
+			}
+
+			file = files[0];
+
+			if (file.size > 1024 * 1024 * 5) {
+				showError("The file size should be < 5 MB.");
+				return;
+			}
+
+			var q0 = $("#fname").val();
+			var q1 = $("#lname").val();
+			var q2 = $("#email").val();
+			var major = document.getElementById("major-drop");
+			if (major[major.selectedIndex].value == "Others") {
+				var q3 = $("#others").val();	
+			} else {
+				var q3 = major[major.selectedIndex].value;
+			}
+			var year = document.getElementById("year");			
+			var q4 = year[year.selectedIndex].value;
+			var q5 = $("input[name='Challenge']:checked").val();
+			var q6 = $("#team").val();
+			var shirt = document.getElementById("shirt");
+			var q7 = shirt[shirt.selectedIndex].value;
+			var q8 = $("input[name='Payment']:checked").val();
+			var q9 = $("#comments").val();
+			
+			google.script.run.addResponseToSheet(q0, q1, q2, q3, q4, q5, q6, q7, q8, q9);
+
+			showMessage("Uploading file...");
+
+			reader.readAsDataURL(file);
+		}
+
+		function showError(e) {
+			$("#progress").addClass("red-text").html(e);
+		}
+
+		function showMessage(e) {
+			$("#progress").removeClass("red-text").html(e);
+		}
+	</script>
+</body>
+</html>
