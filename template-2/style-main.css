@@ -3,7 +3,7 @@
 			box-sizing: border-box; }
 
 html {
-	background: rgb(50, 45, 40) url("img/background/stars.jpg") no-repeat center fixed; 
+	background: rgb(50, 45, 40) url("img/background/background.jpg") no-repeat center fixed; 
 	-webkit-background-size: cover;	
 	-o-background-size: cover;
 	background-size: cover;	
