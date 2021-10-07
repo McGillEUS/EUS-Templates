@@ -1,422 +1,146 @@
-<!doctype html>
-<html lang="en-US">
-<head>
-	<title>Website Title</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta name="auther" content=""/>
-	<meta name="keywords" content=""/>
-	<meta name="description" content="">
-	<link rel="icon" href = "img/ExampleFavicon.png"/>
-	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,500|Arvo|Anonymous+Pro:400,700" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="style-main.css"/>
-	<link rel="stylesheet" href="style-popup.css"/>	
-</head>	
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title name</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
 
-<body>	
-<header>
-	<div><img id="icon" src="img/jar.png"/></div>
-	<div><img id="title" src="img/Website Title.png"></div>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> 
+                    <img src = "img/ExampleLogo.jpg" style = "width: 125px;height:130px;" class= "responsive">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a> </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="council.html">Councile</a> </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Events.html">Events</a> </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Getting%20Involved.html">Getting Involved</a> </li>
+                        <li class="nav-item">	
+                            <a class="nav-link" href="Contact%20Us.html"> Contact Us </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-	<nav id="menu">
-		<ul>
-			<li>Menu</li>
-			<li class="menu-link" id="show-news"><i class="fa fa-newspaper-o fa-lg fa-fw" aria-hidden="true"></i> Home</li>
-			<li class="menu-link pop" href="#Team"><i class="fa fa-users fa-lg fa-fw" aria-hidden="true"></i> Team</li>
-			<li class="menu-link pop" href="#NavibarSection"><i></i>Navibar Section</li>
-		</ul>
-	</nav>
-</header>
+        <!--- Image Slider -->
+        <div id="slides" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0"> class = "active"</li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+            </ul>
 
-<section id="news-container">
-	<div id="clear-news"><div class="table"><p style="text-align:right;">Clear All</p></div></div>
-	<div id="news">	
+            <div class="carousel-inner" >
+                <div class="carousel-item active">
+                    <img src = "img/SliderBackgroundImage1.jpg" alt="bg0">
+                    <div class="carousel-caption">
+                        <h2 class="display-4">Title 1</h1>
+                        <h3>Title 2 </h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src = "img/SliderBackgroundImage2.jpg" alt="bg1"style="width:100%;height:90%;">
+                </div>
+                <div class="carousel-item">
+                    <img src = "img/SliderBackgroundImage3.jpg" alt="bg2"style="width:100%;height:90%;">
+                </div> 
+            </div>
+        </div>
 
-		<div class="news-item active-news">
-			<div class="news-header">
-				<h2><i class="fa fa-bell-o" aria-hidden="true" style="margin:0 .5rem 0 0"></i>Dashboard 1</h2>
-				<button class="header-button dismiss-news">
-					<i class="fa fa-trash" aria-hidden="true" style="color:#fff;"></i>
-				</button>
-			</div>			
-			<div class="news-body">
-				<p>Dashboard 1 Info</p>		
-			</div>
-		</div>
+        <!--- Welcome Section -->
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4"> Welcome Section </h1>
+                </div>
+                <hr>
+                <div class="col-12">
+                    <p class="lead">Welcome Section Information</p>
 
-		<div class="news-item active-news">
-			<div class="news-header">
-				<h2><i class="fa fa-bell-o" aria-hidden="true" style="margin:0 .5rem 0 0"></i>Dashboard 2</h2>
-				<button class="header-button dismiss-news">
-					<i class="fa fa-trash" aria-hidden="true" style="color:#fff;"></i>
-				</button>
-			</div>			
-			<div class="news-body">
-				<p>Dashboard 2 Info</p>
-			</div>
-		</div>
+                </div>
+            </div>
 
-		<div class="news-item active-news">
-			<div class="news-header">
-				<h2><i class="fa fa-bell-o" aria-hidden="true" style="margin:0 .5rem 0 0"></i>Dashboard 3</h2>
-				<button class="header-button dismiss-news">
-					<i class="fa fa-trash" aria-hidden="true" style="color:#fff;"></i>
-				</button>
-			</div>
-			<div class="news-body">
-				<p>Dashboard 3 Info</p>
-			</div>
-		</div>
+        </div>
 
+        <!--- Three Column Section -->
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class= "col-xs-12 col-sm-6 col-md-4">		
+                    <h3> <b> Column 1</b> </h3>
+                    <p>Column 1 Information</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h3> <b> Column 2 </b></h3>
+                    <p> Column 2 Information</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h3> <b> Column 3 </b></h3>
+                    <p> Column 2 Information</p>
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
 
-	</div>
-	
-</section>
+        <!--- Connect -->
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-12">
+                    <h2 style="margin-top:30px;"> Our Social Media Platforms </h2>
+                </div>
+                <div class="col-12 social padding">
+                    <a href="https://www.facebook.com/mcgillchess/"> <i class="fab fa-facebook"></i> </a>
+                    <a href="https://www.youtube.com/channel/UCt6g1JV8yX0YZZtQ8OWl9EQ"> <i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/mcgillchemeng/"> <i class="fab fa-instagram"> </i></a>
+                </div>
+            </div>	
+        </div>
 
-<section id="tile-container">
-	<div class="row">
-		<div class="col50">
-		<!-- If you dont want to your section pop up, remove "pop" from class, and remove secction from "popup-container" section -->
-			<div href="#Section1" class="thumbnail wide pop">
-				<img src="" alt=""/>
-				<div class="tile-title"><div class="table"><h1>Sec1</h1></div></div>
-			</div>
-		</div>		
-		<div class="col50">
-			<div href="#Section2" class="thumbnail medium pop">
-				<img src="" alt=""/>
-				<div class="tile-title"><div class="table"><h1>Sec2</h1></div></div>
-			</div><!--
-		 --><div href="#Section3" class="thumbnail medium pop">
-				<img src="" alt=""/>
-				<div class="tile-title"><div class="table"><h1>Sec3</h1></div></div>
-			</div>
-		</div>
-	</div>
+        <!--- Footer -->
+        <footer>
+            <div class="container-fluid padding">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <img src="img/ExampleLogo.jpg" width="10%" height="auto" style= "filter:grayscale(100%);">
 
-	<div class="row">
-		<div class="col50">
-			<div href="#Section4" class="thumbnail medium pop">
-				<img src="" alt="">
-				<div class="tile-title"><div class="table"><h1>Sec4</h1></div></div>
-			</div>
-			<div href="#Section5" class="thumbnail medium pop">
-				<img src="" alt="">
-				<div class="tile-title"><div class="table"><h1>Sec5</h1></div></div>
-			</div>
-		</div>
-		<div class="col50">
-			<div href="#Section6" class="thumbnail wide pop">
-				<img src="" alt="">
-				<div class="tile-title"><div class="table"><h1>Sec6</h1></div></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col50">
-			<div href="#Section7" class="thumbnail large pop">
-				<img src="" alt="">
-				<div class="tile-title"><div class="table"><h1>Sec7</h1></div></div>
-			</div>
-		</div><!--
-	 --><div class="col50">
-			<div href="#Section8" class="thumbnail medium pop" data-rel="popup" >
-				<img src="" alt="">
-				<div class="tile-title"><div class="table"><h1>Sec8</h1></div></div>
-			</div><!--
-		 --><div href="#Section9" class="thumbnail medium pop">
-				<img src="" alt="">
-				<div class="tile-title"><div class="table"><h1>Sec9</h1></div></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col25 social">
-			<div href="#Section10" class="thumbnail large pop" data-rel="popup" >
-				<img src="" alt="">
-				<div class="tile-title"><div class="table"><h1>Sec10</h1></div></div>
-			</div>
-		</div>
-		<div class="col25">
-			<div href="#Section11" class="thumbnail large pop">
-				<img src="" alt="">
-				<div class="tile-title"><div class="table"><h1>Sec11</h1></div></div>
-			</div>
-		</div>
-	</div>	
-	<div class="row">
-		<div class="col100">
-			<div class="thumbnail wide" id="gallery">
-				<!--<div class="tile-title"><div class="table"><h1>Gallery</h1></div></div>-->
-				<div id="gallery-collection">
-					<div class="gallery-photos">
-						<div class="gallery-photo"><img src="img/SliderBackgroundImage1.jpg"></div>
-						<div class="gallery-photo"><img src="img/SliderBackgroundImage2.jpg"></div>
-						<div class="gallery-photo"><img src="img/SliderBackgroundImage3.jpg"></div>						
-					</div>			
+                        <hr class="light">
+                        <p></p>
+                        <p>Contact Information</p>
+                        <p>Address</p>                    
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-
-<section id="sponsorship-container">
-	<h1>scroll section</h1>
-	<div id="wheel">
-		<div id="frame-collection" href="#Sponsorspop" class="pop">
-			<div class="frame">
-				<img class="sponsor tera" src="img/sponsors/tera/ericsson.gif" alt="ericsson">
-			</div>
-			<div class="frame">
-				<img class="sponsor tera" src="img/sponsors/tera/morgan.png" alt="morganstanley">
-			</div>
-			<div class="frame">
-				<img class="sponsor giga" src="img/sponsors/giga/kronos-black.gif" alt="kronos">
-			</div>
-			<div class="frame">
-				<img class="sponsor mega" src="img/sponsors/mega/microsoft-gray.png" alt="microsoft">
-			</div>
-			<div class="frame">
-				<img class="sponsor kilo" style="left:20%" src="img/sponsors/kilo/cisco.gif" alt="cisco">
-				<img class="sponsor kilo" style="left:50%" src="img/sponsors/kilo/constellation.png" alt="constellation">
-				<img class="sponsor kilo" style="left:80%" src="img/sponsors/kilo/goog.png" alt="google">
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="popup-container">
-	<div id="popup-layer"></div>
-	<div id="Section1" class="popup">
-		<div class="popup-header">
-			<h2>Section 1 Title</h2>
-		</div>
-		<div class="popup-body">
-			<p>Information 1</p>
-		</div>
-		<div class="popup-footer">
-			<button class="footer-button exit">Close</button>
-		</div>
-	</div>
-
-	<div id="Section2" class="popup">
-		<div class="popup-header">
-			<h2>Section 2 Title</h2>
-		</div>
-		<div class="popup-body">
-			<p>Information 2</p>
-		</div>
-		<div class="popup-footer">
-			<button class="footer-button exit">Close</button>
-		</div>
-	</div>
-
-	<div id="Section3" class="popup">
-		<div class="popup-header">
-			<h2>Section 3 Title</h2>
-		</div>
-		<div class="popup-body">
-			<p>Information 3</p>
-		</div>
-		<div class="popup-footer">
-			<button class="footer-button exit">Close</button>
-		</div>
-	</div>
-
-	<div id="Section4" class="popup">
-		<div class="popup-header">
-			<h2>Section 4 Title</h2>
-		</div>
-		<div class="popup-body">
-			<p>Information 4</p>
-		</div>
-		<div class="popup-footer">
-			<button class="footer-button exit">Close</button>
-		</div>
-	</div>
-
-	<div id="Section5" class="popup">
-		<div class="popup-header">
-			<h2>Section 5 Title</h2>
-		</div>
-		<div class="popup-body">
-			<p>Information 5</p>
-		</div>
-		<div class="popup-footer">
-			<button class="footer-button exit">Close</button>
-		</div>
-	</div>
-
-	<div id="Section6" class="popup">
-		<div class="popup-header">
-			<h2>Section 6 Title</h2>
-		</div>
-		<div class="popup-body">
-			<p>Information 6</p>
-		</div>
-		<div class="popup-footer">
-			<button class="footer-button exit">Close</button>
-		</div>
-	</div>
-	
-	<div id="Section7" class="popup">
-		<div class="popup-header">
-			<h2>Section 7 Title</h2>
-		</div>
-		<div class="popup-body">
-			<p>Information 7</p>
-		</div>
-		<div class="popup-footer">
-			<button class="footer-button exit">Close</button>
-		</div>
-	</div>
-	<div id="Section8" class="popup">
-		<div class="popup-header">
-			<h2>Section 8 Title</h2>
-		</div>
-		<div class="popup-body">
-			<p>Information 8</p>
-		</div>
-		<div class="popup-footer">
-			<button class="footer-button exit">Close</button>
-		</div>
-	</div>
-	<div id="Section9" class="popup">
-		<div class="popup-header">
-			<h2>Section 9 Title</h2>
-		</div>
-		<div class="popup-body">
-			<p>Information 9</p>
-		</div>
-		<div class="popup-footer">
-			<button class="footer-button exit">Close</button>
-		</div>
-	</div>
-	<div id="Section10" class="popup">
-		<div class="popup-header">
-			<h2>Section 10 Title</h2>
-		</div>
-		<div class="popup-body">
-			<p>Information 10</p>
-		</div>
-		<div class="popup-footer">
-			<button class="footer-button exit">Close</button>
-		</div>
-	</div>
-	<div id="Section11" class="popup">
-		<div class="popup-header">
-			<h2>Section 11 Title</h2>
-		</div>
-		<div class="popup-body">
-			<p>Information 11</p>
-		</div>
-		<div class="popup-footer">
-			<button class="footer-button exit">Close</button>
-		</div>
-	</div>
-	
-	<div id="Sponsorspop" class="popup">
-		<div class="popup-header">
-			<h2>Our Sponsors</h2>
-		</div>
-		<div class="popup-body">
-			<h3>Terabyte Sponsors</h3>
-			<div class="frame">
-				<a target="_blank" href="https://ericsson.com">
-					<img class="sponsor tera" src="img/sponsors/tera/ericsson.gif" alt="ericsson">
-				</a>
-			</div>
-			<div class="frame">
-				<a target="_blank" href="https://morganstanley.com">
-					<img class="sponsor tera" src="img/sponsors/tera/morgan.png" alt="morgan">
-				</a>
-			</div>
-			<h3>Gigabyte Sponsors</h3>
-			<div class="frame">
-				<a target="_blank" href="https://kronos.com">
-					<img class="sponsor giga" src="img/sponsors/giga/kronos-black.gif" alt="kronos" style="filter:invert(1); ">
-				</a>
-			</div>
-			<h3>Megabyte Sponsors</h3>
-			<div class="frame">
-				<a target="_blank" href="https://microsoft.com">
-					<img class="sponsor mega" src="img/sponsors/mega/microsoft-gray.png" alt="microsoft">
-				</a>
-			</div>
-			<h3>Kilobyte Sponsors</h3>
-			<div class="frame">
-				<a target="_blank" href="https://cisco.com">
-					<img style="left:20%" class="sponsor kilo" src="img/sponsors/kilo/cisco.gif" alt="cisco">
-				</a>
-				<a target="_blank" href="http://constellationgames.com">
-					<img style="left:50%" class="sponsor kilo" src="img/sponsors/kilo/constellation.png" alt="constellation">
-				</a>
-				<a target="_blank" href="https://google.com/about/company">
-					<img style="left:80%" class="sponsor kilo" src="img/sponsors/kilo/goog.png" alt="google">
-				</a>
-			</div>
-		</div>
-		<div class="popup-footer">
-			<button class="footer-button exit">Close</button>
-		</div>
-	</div>
-
-	<div id="Team" class="popup">
-		<div class="popup-header">
-			<h2>The Committee</h2>
-		</div>
-		<div class="popup-body">
-			<div class="profile">
-				<h3>Name 1 - <span style="font-variant:small-caps">Position 1</span></h3>
-				<img class="profile-pic" src="img/ProfilePicture.png" alt="Name1"/>
-				<p>Description 1</p>
-			</div>
-
-			<div class="profile">
-				<h3>Name 2 - <span style="font-variant:small-caps">Position 2</span></h3>
-				<img class="profile-pic" src="img/ProfilePicture.png" alt="Name1"/>
-				<p>Description 2</p>
-			</div>
-			<div class="profile">
-				<h3>Name 3 - <span style="font-variant:small-caps">Position 3</span></h3>
-				<img class="profile-pic" src="img/ProfilePicture.png" alt="Name1"/>
-				<p>Description 3</p>
-			</div>		
-		</div>
-		<div class="popup-footer">
-			<button class="footer-button exit">Close</button>
-		</div>
-	</div>
-
-	<div id="NavibarSection" class="popup">
-		<div class="popup-header">
-			<h2>NavibarSection Title</h2>
-		</div>
-		<div class="popup-body">
-			<p>NavibarSection Information</p>
-		</div>
-		<div class="popup-footer">
-			<button class="footer-button exit">Close</button>
-		</div>
-	</div>	
-</section>
-
-
-<footer>
-	<div id="footer" style="padding-bottom:3rem">
-		<p>Contact information: <a class="email" href="mailto:ecsess.vpexternal@mcgilleus.ca">ecsess.vpexternal@mcgilleus.ca</a></p>
-		<p>Electrical, Computer and Software Engineering Student Society of McGill University (ECSESS)</p>	
-	</div>
-</footer> 
-
-<script src="lib/jquery-3.1.1.min.js"></script>	
-<script src="script.js"></script>
-
+		</footer>
 
 </body>
+</html>
 
-</html>	
+
+
+
+
+
+
+
+
+
+
+
 
