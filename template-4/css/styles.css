@@ -101,6 +101,32 @@ hr:not([size]) {
   height: 1px;
 }
 
+#club-logo{
+  min-width: 150px;
+  min-height:60px;
+}
+
+#sponsor1{
+  min-width: 170px;
+  min-height: 120px;
+}
+
+#sponsor2{
+  min-width: 170px;
+  min-height: 120px;
+}
+
+#sponsor3{
+  min-width: 170px;
+  min-height: 120px;
+}
+
+#sponsor4{
+  min-width: 170px;
+  min-height: 120px;
+}
+
+
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
