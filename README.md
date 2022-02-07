@@ -2,6 +2,8 @@
 
 [![pages-build-deployment](https://github.com/McGillEUS/EUS-Templates/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/McGillEUS/EUS-Templates/actions/workflows/pages/pages-build-deployment)
 
+### To look at the templates' preview, head over to: [https://mcgilleus.github.io/EUS-Templates/](https://mcgilleus.github.io/EUS-Templates/)
+
 ## Description
 
 Templates for the various websites within the EUS.
