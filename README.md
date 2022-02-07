@@ -1,5 +1,7 @@
 # EUS-Templates
 
+[![pages-build-deployment](https://github.com/McGillEUS/EUS-Templates/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/McGillEUS/EUS-Templates/actions/workflows/pages/pages-build-deployment)
+
 ## Description
 
 Templates for the various websites within the EUS.
